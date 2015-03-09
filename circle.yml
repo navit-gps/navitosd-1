@@ -9,7 +9,7 @@ dependencies:
     - sudo apt-get install g++
     - sudo apt-get install libjansson-dev
     - sudo apt-get install ratpoison
-    - git clone https://github.com/navit-gps/navit.git
+    - svn co https://svn.code.sf.net/p/navit/code/trunk/ navit/
     - cd navit; mkdir bin; cd bin; cmake -D graphics/qt_qpainter:BOOL=FALSE -D gui/qml:BOOL=FALSE ../ && make
 machine:
   environment:
